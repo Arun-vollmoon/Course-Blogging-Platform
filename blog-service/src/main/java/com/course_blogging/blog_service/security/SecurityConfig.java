@@ -1,6 +1,5 @@
 package com.course_blogging.blog_service.security;
 
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
