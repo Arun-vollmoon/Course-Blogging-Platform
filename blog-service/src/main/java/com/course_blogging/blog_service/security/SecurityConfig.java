@@ -26,7 +26,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         // Swagger permission
                         .requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()
-                        // Public content discovery. Mutating blog, category and tag APIs remain authenticated.
+                        // Public content discovery. Mutating blog, category and tag APIs remain authenticated
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(jwtFilter,UsernamePasswordAuthenticationFilter.class)
